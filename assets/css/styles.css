@@ -1,0 +1,116 @@
+body{
+    background-image: url('../images/christin-hume-505823-unsplash.jpeg');
+    background-size:cover;
+}
+
+.logo{
+ margin-left:700px;
+ padding-top:50px;
+ ;
+}
+
+.startButton{
+    margin-top:50px;
+}
+
+.mainArea{
+    margin-left:600px;
+    margin-top:50px;
+}
+
+
+
+.answer{
+    /* opacity: 0.5; */
+    width:400px;
+    position:center;
+    display:block;
+    position: relative;
+    text-decoration: none;
+    margin-left:100px;
+    margin-top:30px;
+  }
+  .answer::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background:rgb(233, 185, 27);
+    transition: all 0.3s ease 0s;
+  }
+  .answer:hover {
+    cursor: pointer;
+  }
+  .answer:hover::after {
+    width: 100%;
+  }
+
+.questionText{
+    color:white;
+    font-weight:lighter;
+}
+
+.initialText{
+    color:white;
+    font-size:20px;
+    letter-spacing: 0.05em
+    
+    
+}
+
+.timerText{
+    color:white;
+    font-size:20px;
+    margin-bottom:50px;
+}
+
+.correctText{
+    color:white;
+    font-size:40px;
+}
+
+.wrongText{
+    color:white;
+    font-size:40px;
+}
+
+#timer{
+    color:rgb(245, 202, 33);
+    font-size:30px;
+}
+
+.questionText{
+    color:white;
+    font-size:25px;
+}
+
+.imgCorrect{
+    margin-bottom:20px;
+}
+
+/* .finishedText{
+    font-size:25px;
+    color:white;
+} */
+
+.summaryCorrect{
+    font-size:25px;
+    color:white;
+}
+
+.summaryWrong{
+    font-size:25px;
+    color:white;
+}
+
+.summaryUnanswered{
+    font-size:25px;
+    color:white;
+}
+
+.timeOutText{
+    font-size:50px;
+    color:white;
+}
