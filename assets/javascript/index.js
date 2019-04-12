@@ -130,7 +130,7 @@ $(document).ready(function () {
 		}
 	 }
 
-	// function that generates html for the next screen, increments the question counter, and resets timer
+	
 	function nextDisplay() {
 		
 		if (questionCounter < questionArray.length - 1) {
@@ -167,7 +167,7 @@ $(document).ready(function () {
 		timer();
 	}
 
-	// Function that creates the start button and initial screen
+	
 	function initialScreen() {
 		var initialText = "<p class='initialText text-center'>Want to test your knowledge of JavaScript?</p> <p class='initialText text-center'>There are 10 questions total and you will have 20 seconds to answer each one. </p><p class='initialText text-center'>Have fun!</p>";
 		var startButtonHTML = "<button class='startButton btn btn-primary btn-lg btn-block text-center' type='button'>Start Quiz</button>";
@@ -175,13 +175,13 @@ $(document).ready(function () {
 		$(".mainArea").html(startScreen);
 	}
 
-	// When the start button is clicked:
+	
 	$("body").on("click", ".startButton", function (event) {
 		generateHTML();
 		timer();
 	});
 
-	// When an answer is clicked:
+	
 	$("body").on("click", ".answer", function (event) {
 		selectedAnswer = $(this).attr("isCorrect");
 		console.log(selectedAnswer);
@@ -196,7 +196,7 @@ $(document).ready(function () {
 
 	});
 
-	// When the Play Again button is clicked:
+	
 	$("body").on("click", ".resetButton", function (event) {
 		resetGame();
 	});
